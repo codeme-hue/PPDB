@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@android:color/black"
+  android:padding="10dp"
+  tools:context=".MainActivity" >
+
+  <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical" >
+
+    <id.kardihaekal.ppdb.adapter.viewpager.NonSwipeableViewPager
+      android:id="@+id/viewPager"
+      android:layout_width="match_parent"
+      android:layout_height="500dp"
+      android:layout_weight="0.00"
+      android:background="#ffffff"
+      android:scrollbars="horizontal" >
+    </id.kardihaekal.ppdb.adapter.viewpager.NonSwipeableViewPager>
+
+    <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:orientation="horizontal" >
+
+
+      <Button
+        android:id="@+id/buttonSelanjutnya"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:text="Selanjutnya"
+        android:background="@drawable/bg_ui"
+        android:layout_marginLeft="200dp"/>
+      <Button
+        android:id="@+id/buttonSebelumnya"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:text="Sebelumnya"
+        android:background="@drawable/bg_ui"/>
+
+    </RelativeLayout>
+  </LinearLayout>
+
+</RelativeLayout>

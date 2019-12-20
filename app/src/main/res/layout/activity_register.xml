@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".account.register.RegisterActivity"
+  android:id="@+id/rLayoutReg"
+  >
+
+  <androidx.appcompat.widget.Toolbar
+    android:id="@+id/regHeader"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"/>
+
+  <de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/circleImageProfile"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_marginTop="55dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/ic_ppdb" />
+
+  <TextView
+    android:id="@+id/tvjudulReg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/judul"
+    android:layout_below="@+id/circleImageProfile"
+    android:gravity="center_horizontal"
+    android:textColor="@android:color/black"
+    android:textSize="@dimen/text_judul"/>
+
+  <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="220dp">
+
+  <ImageView
+    android:id="@+id/circle1"
+    android:layout_width="134dp"
+    android:layout_height="134dp"
+    android:layout_below="@+id/bgHeader"
+    android:layout_marginLeft="-25dp"
+    android:layout_marginTop="-5dp"
+    android:src="@drawable/circletransparant" />
+
+  <ImageView
+    android:id="@+id/circle3"
+    android:layout_width="182dp"
+    android:layout_height="182dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="-80dp"
+    android:layout_marginBottom="-30dp"
+    android:src="@drawable/circle" />
+
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/tvJudul"
+    android:layout_margin="20dp"
+    tools:ignore="NotSibling">
+    <RelativeLayout
+      android:id="@+id/rlayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+
+      <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp">
+
+        <TextView
+          android:id="@+id/tvSignUp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:elevation="10dp"
+          android:transitionName="tvLogin"
+          android:text="Sign up"
+          android:textColor="@android:color/black"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:paddingBottom="50dp">
+
+          <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Email"
+            android:textColor="@color/colorPurple"
+            android:textSize="14sp" />
+
+          <EditText
+            android:id="@+id/edtRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="Please fill your email"
+            android:drawableStart="@drawable/ic_mail_outline_black"/>
+
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Password"
+            android:textColor="@color/colorPurple"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+          <EditText
+            android:id="@+id/edtRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textPassword"
+            android:hint="Please fill your pasword"
+            android:drawableStart="@drawable/ic_password_outline_black"/>
+
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+
+      <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv"
+        android:layout_alignLeft="@+id/cv"
+        android:layout_alignRight="@+id/cv"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginRight="35dp"
+        android:elevation="10dp">
+
+        <Button
+          android:id="@+id/btnSignUp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/bg_ui"
+          android:text="Sign up"
+          android:textAllCaps="false"
+          android:textColor="@color/colorWhite" />
+      </RelativeLayout>
+    </RelativeLayout>
+  </ScrollView>
+
+  </RelativeLayout>
+
+
+</RelativeLayout>

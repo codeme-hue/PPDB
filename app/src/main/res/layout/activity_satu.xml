@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="16dp"
+  tools:context="id.kardihaekal.ppdb.ui.formdaftar.SatuActivity">
+
+
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/circleImageFragment"
+      android:layout_width="120dp"
+      android:layout_height="120dp"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/ic_ppdb"
+      android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+      android:id="@+id/tvJudul"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/circleImageFragment"
+      android:gravity="center_horizontal"
+      android:text="@string/judul_fragment"
+      android:textColor="@android:color/black"
+      android:textSize="@dimen/text_judul"
+      android:textStyle="bold"/>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tvJudul"
+      android:layout_marginTop="20dp">
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/biodata"
+        android:textSize="@dimen/text_judul_fragment"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+      <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_page"
+        android:text="@string/page"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_judul_fragment" />
+    </RelativeLayout>
+
+
+  </RelativeLayout>
+
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/margin_top_edtText"/>
+
+      <EditText
+        android:id="@+id/input_nama_lengkap"
+        android:layout_width="match_parent"
+        android:background="@color/edtColor"
+        android:layout_height="@dimen/edtText_height"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:met_floatingLabel="highlight"
+        android:layout_marginTop="@dimen/margin_top_first_input"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Panggilan"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/margin_top_edtText"/>
+
+
+      <EditText
+        android:id="@+id/input_nama_panggilan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edtText_height"
+        android:inputType="textPersonName"
+        android:layout_marginTop="@dimen/margin_top_edtText"
+        android:textSize="16sp"
+        android:background="@color/edtColor"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kelamin"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/margin_top_edtText"/>
+
+    <com.reginald.editspinner.EditSpinner
+      android:id="@+id/input_kelamin"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/edtText_height"
+      android:layout_marginTop="@dimen/margin_top_edtText"
+      android:textSize="16sp"
+      app:met_floatingLabel="highlight"
+      android:editable="false"
+      android:background="@color/edtColor"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agama"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/margin_top_edtText"/>
+
+      <EditText
+        android:id="@+id/input_agama"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edtText_height"
+        android:layout_marginTop="@dimen/margin_top_edtText"
+        android:textSize="16sp"
+        android:background="@color/edtColor"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tempat Lahir"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/margin_top_edtText"/>
+
+      <EditText
+        android:id="@+id/input_tempat_lahir"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edtText_height"
+        android:layout_marginTop="@dimen/margin_top_edtText"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:background="@color/edtColor"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal lahir"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/margin_top_edtText"/>
+
+      <EditText
+        android:id="@+id/input_tanggal_lahir"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edtText_height"
+        android:layout_marginTop="@dimen/margin_top_edtText"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:background="@color/edtColor" />
+
+      <Button
+        android:id="@+id/button_save1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="selanjutnya"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorBlue"/>
+
+  </LinearLayout>
+  </ScrollView>
+</LinearLayout>

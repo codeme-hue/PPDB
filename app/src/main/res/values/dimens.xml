@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="marginTopImageProfile">10dp</dimen>
+  <dimen name="margin_left_page">275dp</dimen>
+  <dimen name="margin_top_first_input">20dp</dimen>
+  <dimen name="alert_witdh">200dp</dimen>
+  <dimen name="alert_height">200dp</dimen>
+  <dimen name="tv_size_alert_judul">30dp</dimen>
+  <dimen name="edtText_height">45dp</dimen>
+  <dimen name="margin_top_edtText">15dp</dimen>
+</resources>

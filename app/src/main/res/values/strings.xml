@@ -1,0 +1,28 @@
+<resources>
+  <string name="app_name">PPDB</string>
+  <string name="judul">PENERIMAAN SANTRI BARU PONDOK IT  (PPDB ONLINE)</string>
+  <string name="judul_fragment">Registrasi Murid Baru</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="biodata">Biodata</string>
+  <string name="page">1/6</string>
+  <string name="page_dua">2/6</string>
+  <string name="page_tiga">3/6</string>
+  <string name="page_empat">4/6</string>
+  <string name="page_enam">5/6</string>
+  <string name="gender_male">Laki-Laki</string>
+  <string name="gender_female">Perempuan</string>
+  <string name="alert_satu">Assalamualaikum</string>
+  <string name="alert_satu2">Mohon Perhatian</string>
+  <string name="tv_alert_satu">Sebelum memasukkan data periksa kembali koneksi internet andapastikan dalam kondisi stabil demi kelancaran proses pengisian formulir</string>
+  <string name="tv_alert_dua">1.Foto rapot kelas 4 semester 1 dan 2(wajib legalisir kepala sekolah) \2.Foto rapot kelas 5 semester 1 dan 2(wajib legalisir kepala sekolah \3.Foto akta kelahiran  \4.Foto calon murid \5.Foto kartu keluarga \6.Foto bukti transfer BANK DKI 53625726377PONDOK IT sebesar Rp500.000</string>
+  <string name="title">Dokumentasi Wilayah Indonesia</string>
+  <string name="btn_get_api_data">Get API Data</string>
+  <string name="txt_slct_prov">Pilih Provinsi</string>
+  <string name="txt_slct_kab">Pilih Kabupaten</string>
+  <string name="txt_slct_kec">Pilih Kecamatan</string>
+  <string name="txt_slct_kel">Pilih Kelurahan</string>
+
+  <string name="txt_please_slct">Silakan Pilih!</string>
+</resources>
